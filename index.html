@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
-    <title>网络设备安全分析报告系统 v2.7.2</title>
+    <title>网络设备安全分析报告系统 v2.7.3</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
@@ -14,7 +14,7 @@
             <div class="logo">
                 <i class="fas fa-shield-alt"></i>
                 <div>
-                    <h1>网络设备安全分析报告系统 v2.7.2</h1>
+                    <h1>网络设备安全分析报告系统 v2.7.3</h1>
                     <p>网络安全监测与风险评估平台 | 增强品牌识别 | 批量重复处理 | 固定编辑索引</p>
                 </div>
             </div>
@@ -47,6 +47,9 @@
                     <button class="btn btn-primary" id="uploadScanFileBtn">
                         <i class="fas fa-upload"></i> 上传端口CSV
                     </button>
+                    <button class="btn btn-primary" id="uploadNmapXmlBtn">
+                        <i class="fas fa-upload"></i> 上传Nmap XML
+                    </button>
                     <button class="btn btn-primary" id="addSingleDeviceBtn">
                         <i class="fas fa-plus-circle"></i> 添加单条设备
                     </button>
@@ -72,6 +75,7 @@
                 </div>
                 <input type="file" id="deviceFileInput" accept=".csv,.txt" style="display: none;">
                 <input type="file" id="scanFileInput" accept=".csv,.txt" style="display: none;">
+                <input type="file" id="nmapXmlFileInput" accept=".xml" style="display: none;">
                 <input type="file" id="importFileInput" accept=".json,.html,.xml" style="display: none;">
             </div>
         </section>
@@ -188,7 +192,7 @@
         </section>
         
         <footer>
-            <p>© 2025 网络安全分析系统 | 维护人员: msyg | 数据更新时间: <span id="updateTime"></span> | 版本: <span id="version">2.7.0</span></p>
+            <p>© 2025 网络安全分析系统 | 维护人员: msyg | 数据更新时间: <span id="updateTime"></span> | 版本: <span id="version">2.7.3</span></p>
             <p class="responsive-info" id="responsiveInfo"></p>
         </footer>
     </div>
